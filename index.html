@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<head>
+
+    <!-- /======\ META /======\ -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Travel</title>
+
+    <!-- /======\ STYLESHEETS /======\ -->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- /======\ CDN /======\ -->
+    <script src="https://kit.fontawesome.com/156421e585.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Poppins:wght@300;400;500;600;700;800&family=Raleway:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet" />
+
+    <style>
+        .video2 {
+            mask: url('#imask');
+            -webkit-mask: url('./svg/mask.svg');
+        }
+
+        .video1 {
+            mask: url('#imask2');
+            -webkit-mask: url('./svg/mask2.svg');
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div>
+        <video autoplay class="clip1 video1" src="./video/video.mp4" loop></video>
+    </div>
+    <div>
+        <video autoplay class="clip2 video2" src="./video/video2.mp4" loop></video>
+    </div>
+
+    <div class="shadow"></div>
+
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 0 1920 1080">
+        <defs>
+            <mask id="imask">
+                <image width="1920" height="1080"></image>
+            </mask>
+        </defs>
+    </svg>
+
+    <div style="height: 200vh;"></div>
+</body>
+
+</html>
